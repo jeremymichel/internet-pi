@@ -34,6 +34,7 @@
       - python3-pip
       - git
       - rsync
+      - vim
     state: present
   when: ansible_facts.os_family == "Debian"
 
@@ -46,6 +47,7 @@
       - python-pip
       - git
       - rsync
+      - vim
     state: present
   when: ansible_facts.os_family == "Archlinux"
 
