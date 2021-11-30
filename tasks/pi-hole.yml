@@ -21,3 +21,12 @@
     project_src: "{{ config_dir }}/pi-hole/"
     build: false
   become: false
+
+- name: Set resolver to localhost
+  ansible.builtin.lineinfile:
+    path: /etc/resolvconf.conf
+    regexp: '^#\s*(name_servers=127.0.0.1)'
+    line: 'name_servers=127.0.0.1'
+    owner: root
+    group: root
+    mode: '0644'
