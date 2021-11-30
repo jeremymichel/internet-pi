@@ -641,7 +641,7 @@
         "for": "5m",
         "frequency": "1m",
         "handler": 1,
-        "message": "CPU is On Fire BRO",
+        "message": "CPU T° too high",
         "name": "CPU Temps alert",
         "noDataState": "no_data",
         "notifications": [
